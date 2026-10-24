@@ -26,14 +26,19 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.flm.EmployeeManagement"/>
+			<item value="com.mvc.SpringMVCNoXML"/>
 			<item value="com.mvc.SpringMVC"/>
 			<item value="com.hib.HibOrm"/>
 		</list>
 		<list key="groupId">
+			<item value="com.flm"/>
 			<item value="com.mvc"/>
 			<item value="com.hib"/>
 		</list>
 		<list key="artifactId">
+			<item value="EmployeeManagement"/>
+			<item value="SpringMVCNoXML"/>
 			<item value="SpringMVC"/>
 			<item value="HibOrm"/>
 		</list>
