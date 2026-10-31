@@ -12,9 +12,13 @@ public class AdminService {
 	@Autowired
 	AdminDAO adminDAO;
 	
-	public String loginAdmin(String userName, String password) {
+	public Admin loginAdmin(String userName, String password) {
 		
-		Admin admin = new Admin(userName, password);
+		Admin admin = adminDAO.findAdminByUserName(userName);
+		
+		if(admin != null && admin.getPassword().equals(password)) {
+			return admin;
+		}
 		return null;
 	}
 	
